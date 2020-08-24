@@ -1,10 +1,11 @@
-# x5-gmaps ([Live Demo](https://xon52.github.io/x5-gmaps))
+<!-- # x5-gmaps ([Live Demo](https://xon52.github.io/x5-gmaps)) -->
+# Credit
+This library is originally forked from [x5-maps](https://github.com/xon52/x5-gmaps/) which is a work done by [Keagan Chisnall](https://github.com/xon52), you can checkout his [tutorial creating a COVID Heatmap](https://medium.com/javascript-in-plain-english/making-a-covid-map-using-vue-google-maps-89eb70a9f089) on medium and give him a clap.
 
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/x5-gmaps)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/destiny-gmaps)
 
 This is a lightweight Google Maps plugin for Vue.
 
-Also check out a [tutorial creating a COVID Heatmap](https://medium.com/javascript-in-plain-english/making-a-covid-map-using-vue-google-maps-89eb70a9f089) using this.
 
 :warning: This plugin is in development, so please let me know if you find any errors.
 
@@ -12,7 +13,7 @@ Also check out a [tutorial creating a COVID Heatmap](https://medium.com/javascri
 
 ```bash
 # npm
-npm install x5-gmaps
+npm install destiny-gmaps
 ```
 
 ## Deployment
@@ -20,11 +21,11 @@ npm install x5-gmaps
 This plugin can be installed like any Vue plugin:
 
 ```js
-import x5GMaps from 'x5-gmaps'
+import destinyMaps from 'destiny-maps'
 // Option 1: Just your key
-Vue.use(x5GMaps, 'YOUR_GOOGLE_KEY')
+Vue.use(destinyMaps, 'YOUR_GOOGLE_KEY')
 // Option 2: With libraries
-Vue.use(x5GMaps, { key: 'YOUR_GOOGLE_KEY', libraries: ['places'] })
+Vue.use(destinyMaps, { key: 'YOUR_GOOGLE_KEY', libraries: ['places'] })
 
 new Vue({
   el: '#app',
@@ -36,7 +37,7 @@ new Vue({
 
 ```js
 module.exports = {
-  transpileDependencies: ['x5-gmaps'],
+  transpileDependencies: ['destiny-maps'],
 }
 ```
 
@@ -53,7 +54,7 @@ module.exports = {
 ```
 
 ```js
-import { gmapsMap, gmapsMarker } from 'x5-gmaps'
+import { gmapsMap, gmapsMarker } from 'destiny-maps'
 
 export default {
   components: { gmapsMap, gmapsMarker },
@@ -88,7 +89,7 @@ This component supports the following events:
 </template>
 
 <script>
-  import { gmapsMap } from 'x5-gmaps'
+  import { gmapsMap } from 'destiny-maps'
 
   export default {
     components: { gmapsMap },
@@ -137,7 +138,7 @@ _\* If you want to change values on the fly, use the named props instead of with
 </template>
 
 <script>
-  import { gmapsMap, gmapsMarker } from 'x5-gmaps'
+  import { gmapsMap, gmapsMarker } from 'destiny-maps'
 
   export default {
     components: { gmapsMap, gmapsMarker },
@@ -174,7 +175,7 @@ This component only supports a `@closed` event _(for when someone closes the win
 </template>
 
 <script>
-  import { gmapsMap, gmapsInfoWindow } from 'x5-gmaps'
+  import { gmapsMap, gmapsInfoWindow } from 'destiny-maps'
 
   export default {
     components: { gmapsMap, gmapsInfoWindow },
@@ -216,7 +217,7 @@ All events are registered from the markup/component you place inside it rather t
 </template>
 
 <script>
-  import { gmapsMap, gmapsPopup } from 'x5-gmaps'
+  import { gmapsMap, gmapsPopup } from 'destiny-maps'
 
   export default {
     components: { gmapsMap, gmapsPopup },
@@ -259,7 +260,7 @@ This component does not have any events.
 </template>
 
 <script>
-  import { gmapsMap, gmapsHeatmap } from 'x5-gmaps'
+  import { gmapsMap, gmapsHeatmap } from 'destiny-maps'
 
   export default {
     components: { gmapsMap, gmapsHeatmap },
@@ -322,7 +323,7 @@ This component supports the following events:
 </template>
 
 <script>
-  import { gmapsMap, gmapsPolyline, gmapsPolygon } from 'x5-gmaps'
+  import { gmapsMap, gmapsPolyline, gmapsPolygon } from 'destiny-maps'
 
   export default {
     components: { gmapsMap, gmapsPolyline, gmapsPolygon },
@@ -386,7 +387,7 @@ This component supports the following events:
 </template>
 
 <script>
-  import { gmapsMap, gmapsRectangle, gmapsCircle } from 'x5-gmaps'
+  import { gmapsMap, gmapsRectangle, gmapsCircle } from 'destiny-maps'
 
   export default {
     components: { gmapsMap, gmapsPolyline, gmapsPolygon },
@@ -414,7 +415,7 @@ As mentioned above, additional libraries can be used in conjunction with this pa
 
 ```js
 // main.js
-Vue.use(x5GMaps, { key: 'YOUR_GOOGLE_KEY', libraries: ['places'] })
+Vue.use(destinyMaps, { key: 'YOUR_GOOGLE_KEY', libraries: ['places'] })
 ```
 
 ### :warning: This is an example taken from a project of mine; you may be able to find a more efficient way to do this. It is focused around using the [AutocompleteService](https://developers.google.com/maps/documentation/javascript/places-autocomplete).
@@ -459,7 +460,7 @@ Vue.use(x5GMaps, { key: 'YOUR_GOOGLE_KEY', libraries: ['places'] })
 
 <hr>
 
-### :warning: **It's highly recommended to check out the demo at the top of this readme to have a play around.**
+<!-- ### :warning: **It's highly recommended to check out the demo at the top of this readme to have a play around.** -->
 
 <hr>
 
@@ -490,13 +491,10 @@ While you shouldn't see these for too long while the map loads (if at all), ther
 
 ---
 
-## Contributing
-
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for the process for submitting pull requests.
-
 ## Authors
 
-- [Keagan Chisnall](https://github.com/xon52)
+- [Keagan Chisnall](https://github.com/xon52) "Original Author"
+- [Sohaib Sherif](https://github.com/sohaib-sherif) 
 
 ## License
 
