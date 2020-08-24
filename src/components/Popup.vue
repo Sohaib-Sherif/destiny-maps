@@ -19,8 +19,8 @@ export default {
     width: { type: String, default: '200px' },
     height: { type: String, default: '60px' },
     position: { type: Object, required: true },
-    xOffset: {type: number, default: 0},
-    yOffset: {type: number, default: 0}
+    xOffset: {type: Number, default: 0},
+    yOffset: {type: Number, default: 0}
   },
   data: () => ({ popup: null }),
   watch: {
