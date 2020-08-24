@@ -21,7 +21,7 @@
 
 <script>
 const defaultOptions = {
-  center: { lat: -27.5, lng: 153 },
+  center: { lat: 32.850598, lng: 13.239121 },
   zoom: 12
 }
 
