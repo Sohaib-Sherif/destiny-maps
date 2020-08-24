@@ -1,19 +1,20 @@
 <!-- # x5-gmaps ([Live Demo](https://xon52.github.io/x5-gmaps)) -->
-# Credit
-This library is originally forked from [x5-maps](https://github.com/xon52/x5-gmaps/) which is a work done by [Keagan Chisnall](https://github.com/xon52), you can checkout his [tutorial creating a COVID Heatmap](https://medium.com/javascript-in-plain-english/making-a-covid-map-using-vue-google-maps-89eb70a9f089) on medium and give him a clap.
-
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/destiny-gmaps)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/destiny-maps)
 
 This is a lightweight Google Maps plugin for Vue.
 
 
 :warning: This plugin is in development, so please let me know if you find any errors.
 
+# Credit
+This library is originally forked from [x5-maps](https://github.com/xon52/x5-gmaps/) which is a work done by [Keagan Chisnall](https://github.com/xon52), you can checkout his [tutorial creating a COVID Heatmap](https://medium.com/javascript-in-plain-english/making-a-covid-map-using-vue-google-maps-89eb70a9f089) on medium and give him a clap.
+
+
 ## Installation
 
 ```bash
 # npm
-npm install destiny-gmaps
+npm install destiny-maps
 ```
 
 ## Deployment
