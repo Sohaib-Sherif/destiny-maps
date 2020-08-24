@@ -18,7 +18,9 @@ export default {
     background: { type: String, default: '#EEEEEE' },
     width: { type: String, default: '200px' },
     height: { type: String, default: '60px' },
-    position: { type: Object, required: true }
+    position: { type: Object, required: true },
+    xOffset: {type: number, default: 0},
+    yOffset: {type: number, default: 0}
   },
   data: () => ({ popup: null }),
   watch: {
@@ -29,7 +31,7 @@ export default {
   mounted() {
     const Popup = createPopupClass()
     this.$GMaps()
-      .then(GMaps => (this.popup = new Popup(this.position, this.$el, GMaps)))
+      .then(GMaps => (this.popup = new Popup(this.position, this.$el, this.xOffset, this.yOffset ,GMaps)))
       .then(() => this.popup.setMap(this.getMap()))
       .catch(e => this.handleError(e))
   },

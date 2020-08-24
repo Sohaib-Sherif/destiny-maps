@@ -6,9 +6,11 @@ export default () => {
    * @constructor
    * @extends {google.maps.OverlayView}
    */
-  function Popup(position, content) {
+  function Popup(position, content, xOffset, yOffset) {
     this.position = new window.google.maps.LatLng(position.lat, position.lng)
     this.content = content
+    this.xOffset = xOffset
+    this.yOffset = yOffset
     // Optionally stop clicks, etc., from bubbling up to the map.
     window.google.maps.OverlayView.preventMapHitsAndGesturesFrom(content)
   }
@@ -25,8 +27,8 @@ export default () => {
   /** Called each frame when the popup needs to draw itself. */
   Popup.prototype.draw = function() {
     const divPosition = this.getProjection().fromLatLngToDivPixel(this.position)
-    this.content.style.left = divPosition.x + 'px'
-    this.content.style.top = divPosition.y + 'px'
+    this.content.style.left = divPosition.x + this.xOffset + 'px'
+    this.content.style.top = divPosition.y + this.yOffset + 'px'
   }
   Popup.prototype.setPosition = function(position) {
     this.position = new window.google.maps.LatLng(position.lat, position.lng)
